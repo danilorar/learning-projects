@@ -1,0 +1,387 @@
+{
+  "configById": {
+    "Plot!2cansn7": {
+      "paths": [
+        {
+          "timestampMethod": "receiveTime",
+          "value": "/YRC/Output.tq[0]",
+          "enabled": true,
+          "color": "#4e98e2"
+        },
+        {
+          "timestampMethod": "receiveTime",
+          "value": "/YRC/Output.tq[1]",
+          "enabled": true,
+          "color": "#f5774d"
+        },
+        {
+          "timestampMethod": "receiveTime",
+          "value": "/YRC/Output.tq[2]",
+          "enabled": true,
+          "color": "#f7df71"
+        },
+        {
+          "timestampMethod": "receiveTime",
+          "value": "/YRC/Output.tq[3]",
+          "enabled": true,
+          "color": "#5cd6a9"
+        }
+      ],
+      "showXAxisLabels": true,
+      "showYAxisLabels": true,
+      "showLegend": false,
+      "legendDisplay": "floating",
+      "showPlotValuesInLegend": false,
+      "isSynced": true,
+      "xAxisVal": "timestamp",
+      "sidebarDimension": 240,
+      "foxglovePanelTitle": "OUT TORQUES",
+      "minYValue": -21000,
+      "maxYValue": 21000
+    },
+    "Plot!3gr4yny": {
+      "paths": [
+        {
+          "timestampMethod": "receiveTime",
+          "value": "/YRC/Output.lower_regen[0]",
+          "enabled": true,
+          "color": "#4e98e2"
+        },
+        {
+          "timestampMethod": "receiveTime",
+          "value": "/YRC/Output.lower_regen[1]",
+          "enabled": true,
+          "color": "#f5774d"
+        },
+        {
+          "timestampMethod": "receiveTime",
+          "value": "/YRC/Output.lower_regen[2]",
+          "enabled": true,
+          "color": "#f7df71"
+        },
+        {
+          "timestampMethod": "receiveTime",
+          "value": "/YRC/Output.lower_regen[3]",
+          "enabled": true,
+          "color": "#5cd6a9"
+        }
+      ],
+      "showXAxisLabels": true,
+      "showYAxisLabels": true,
+      "showLegend": false,
+      "legendDisplay": "floating",
+      "showPlotValuesInLegend": false,
+      "isSynced": true,
+      "xAxisVal": "timestamp",
+      "sidebarDimension": 240,
+      "foxglovePanelTitle": "LOWER REGEN LIMIT",
+      "minYValue": -21000,
+      "maxYValue": 0
+    },
+    "Plot!t7hs5d": {
+      "paths": [
+        {
+          "timestampMethod": "receiveTime",
+          "value": "/YRC/Input.rpms[0]",
+          "enabled": true,
+          "color": "#4e98e2"
+        },
+        {
+          "timestampMethod": "receiveTime",
+          "value": "/YRC/Input.rpms[1]",
+          "enabled": true,
+          "color": "#f5774d"
+        },
+        {
+          "timestampMethod": "receiveTime",
+          "value": "/YRC/Input.rpms[2]",
+          "enabled": true,
+          "color": "#f7df71"
+        },
+        {
+          "timestampMethod": "receiveTime",
+          "value": "/YRC/Input.rpms[3]",
+          "enabled": true,
+          "color": "#5cd6a9"
+        }
+      ],
+      "showXAxisLabels": true,
+      "showYAxisLabels": true,
+      "showLegend": false,
+      "legendDisplay": "floating",
+      "showPlotValuesInLegend": false,
+      "isSynced": true,
+      "xAxisVal": "timestamp",
+      "sidebarDimension": 240,
+      "foxglovePanelTitle": "RPMS"
+    },
+    "Plot!4h8sqin": {
+      "paths": [
+        {
+          "timestampMethod": "receiveTime",
+          "value": "/YRC/Output.r_desired",
+          "enabled": true,
+          "color": "#4e98e2"
+        },
+        {
+          "timestampMethod": "receiveTime",
+          "value": "/YRC/Output.yaw_rate_filt",
+          "enabled": true,
+          "color": "#f7df71"
+        }
+      ],
+      "showXAxisLabels": true,
+      "showYAxisLabels": true,
+      "showLegend": true,
+      "legendDisplay": "floating",
+      "showPlotValuesInLegend": false,
+      "isSynced": true,
+      "xAxisVal": "timestamp",
+      "sidebarDimension": 240,
+      "foxglovePanelTitle": "YAW RATE"
+    },
+    "Plot!45o9jlm": {
+      "paths": [
+        {
+          "timestampMethod": "receiveTime",
+          "value": "/YRC/Output.yaw_moment",
+          "enabled": true,
+          "color": "#4e98e2"
+        }
+      ],
+      "showXAxisLabels": true,
+      "showYAxisLabels": true,
+      "showLegend": false,
+      "legendDisplay": "floating",
+      "showPlotValuesInLegend": false,
+      "isSynced": true,
+      "xAxisVal": "timestamp",
+      "sidebarDimension": 240,
+      "foxglovePanelTitle": "MZ"
+    },
+    "Plot!46v7ie3": {
+      "paths": [
+        {
+          "timestampMethod": "receiveTime",
+          "value": "/YRC/Output.yrc_exitflag",
+          "enabled": true,
+          "color": "#e34f4f"
+        }
+      ],
+      "showXAxisLabels": true,
+      "showYAxisLabels": true,
+      "showLegend": false,
+      "legendDisplay": "floating",
+      "showPlotValuesInLegend": false,
+      "isSynced": true,
+      "xAxisVal": "timestamp",
+      "sidebarDimension": 240,
+      "foxglovePanelTitle": "EXITFLAG"
+    },
+    "Plot!2by21x3": {
+      "paths": [
+        {
+          "timestampMethod": "receiveTime",
+          "value": "/Steer.data",
+          "enabled": true,
+          "color": "#3cff00"
+        }
+      ],
+      "showXAxisLabels": true,
+      "showYAxisLabels": true,
+      "showLegend": false,
+      "legendDisplay": "floating",
+      "showPlotValuesInLegend": false,
+      "isSynced": true,
+      "xAxisVal": "timestamp",
+      "sidebarDimension": 240,
+      "foxglovePanelTitle": "DASH SE",
+      "minYValue": -1000,
+      "maxYValue": 1000
+    },
+    "Plot!p57z1n": {
+      "paths": [
+        {
+          "timestampMethod": "receiveTime",
+          "value": "/YRC/Input.estimation[12]",
+          "enabled": true,
+          "color": "#c76a08"
+        }
+      ],
+      "showXAxisLabels": true,
+      "showYAxisLabels": true,
+      "showLegend": false,
+      "legendDisplay": "floating",
+      "showPlotValuesInLegend": false,
+      "isSynced": true,
+      "xAxisVal": "timestamp",
+      "sidebarDimension": 240,
+      "foxglovePanelTitle": "Vx"
+    },
+    "Plot!3ax8ku4": {
+      "paths": [
+        {
+          "timestampMethod": "receiveTime",
+          "value": "/YRC/Output.steer_angle_left",
+          "enabled": true,
+          "color": "#4e98e2"
+        },
+        {
+          "timestampMethod": "receiveTime",
+          "value": "/YRC/Output.steer_angle_right",
+          "enabled": true,
+          "color": "#f5774d"
+        },
+        {
+          "timestampMethod": "receiveTime",
+          "value": "/YRC/Output.delta",
+          "enabled": true,
+          "color": "#f7df71"
+        }
+      ],
+      "showXAxisLabels": true,
+      "showYAxisLabels": true,
+      "showLegend": false,
+      "legendDisplay": "floating",
+      "showPlotValuesInLegend": true,
+      "isSynced": true,
+      "xAxisVal": "timestamp",
+      "sidebarDimension": 240,
+      "foxglovePanelTitle": "STEER"
+    },
+    "Plot!9uc319": {
+      "paths": [
+        {
+          "timestampMethod": "receiveTime",
+          "value": "/YRC/Output.tsat[0]",
+          "enabled": true,
+          "color": "#4e98e2"
+        },
+        {
+          "timestampMethod": "receiveTime",
+          "value": "/YRC/Output.tsat[1]",
+          "enabled": true,
+          "color": "#f5774d"
+        },
+        {
+          "timestampMethod": "receiveTime",
+          "value": "/YRC/Output.tsat[2]",
+          "enabled": true,
+          "color": "#f7df71"
+        },
+        {
+          "timestampMethod": "receiveTime",
+          "value": "/YRC/Output.tsat[3]",
+          "enabled": true,
+          "color": "#5cd6a9"
+        }
+      ],
+      "showXAxisLabels": true,
+      "showYAxisLabels": true,
+      "showLegend": false,
+      "legendDisplay": "floating",
+      "showPlotValuesInLegend": true,
+      "isSynced": true,
+      "xAxisVal": "timestamp",
+      "sidebarDimension": 240,
+      "foxglovePanelTitle": "SATURATION TORQUES"
+    },
+    "Plot!287cwdd": {
+      "paths": [
+        {
+          "timestampMethod": "receiveTime",
+          "value": "/YRC/Input.bpps",
+          "enabled": true,
+          "color": "#e34f68"
+        },
+        {
+          "timestampMethod": "receiveTime",
+          "value": "/YRC/Input.apps",
+          "enabled": true,
+          "color": "#4cb1f5"
+        }
+      ],
+      "showXAxisLabels": true,
+      "showYAxisLabels": true,
+      "showLegend": false,
+      "legendDisplay": "floating",
+      "showPlotValuesInLegend": true,
+      "isSynced": true,
+      "xAxisVal": "timestamp",
+      "sidebarDimension": 240,
+      "foxglovePanelTitle": "PEDALS"
+    },
+    "Plot!45yheag": {
+      "paths": [
+        {
+          "timestampMethod": "receiveTime",
+          "value": "/YRC/Output.oti_prob_status",
+          "enabled": true,
+          "color": "#e34f68"
+        }
+      ],
+      "showXAxisLabels": true,
+      "showYAxisLabels": true,
+      "showLegend": false,
+      "legendDisplay": "floating",
+      "showPlotValuesInLegend": true,
+      "isSynced": true,
+      "xAxisVal": "timestamp",
+      "sidebarDimension": 240,
+      "foxglovePanelTitle": "OTI STATUS"
+    }
+  },
+  "globalVariables": {},
+  "userNodes": {},
+  "playbackConfig": {
+    "speed": 1
+  },
+  "layout": {
+    "first": {
+      "first": "Plot!2cansn7",
+      "second": {
+        "first": "Plot!3gr4yny",
+        "second": "Plot!t7hs5d",
+        "direction": "row"
+      },
+      "direction": "row"
+    },
+    "second": {
+      "first": {
+        "first": "Plot!4h8sqin",
+        "second": {
+          "first": "Plot!45o9jlm",
+          "second": "Plot!46v7ie3",
+          "direction": "column"
+        },
+        "direction": "row",
+        "splitPercentage": 43.86108613294731
+      },
+      "second": {
+        "first": {
+          "first": "Plot!2by21x3",
+          "second": "Plot!p57z1n",
+          "direction": "column"
+        },
+        "second": {
+          "first": {
+            "first": "Plot!3ax8ku4",
+            "second": "Plot!9uc319",
+            "direction": "row"
+          },
+          "second": {
+            "first": "Plot!287cwdd",
+            "second": "Plot!45yheag",
+            "direction": "row"
+          },
+          "direction": "column"
+        },
+        "direction": "row",
+        "splitPercentage": 34.984995358924834
+      },
+      "direction": "row",
+      "splitPercentage": 38.60691144708424
+    },
+    "direction": "column"
+  }
+}
