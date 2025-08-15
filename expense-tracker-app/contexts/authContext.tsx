@@ -75,24 +75,42 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     // Function to update user data in Firestore
     const updateUserData = async (uid: string) => {
         try {
+            if (!uid) return;
+
             const docRef = doc(firestore, "users", uid);
             const docSnap = await getDoc(docRef);
 
             if (docSnap.exists()) {
-                const data = docSnap.data();
-                const userData: UserType = {
-                    name: data.name || null,
-                    email: data.email || null,
-                    uid: data.uid,
-                    image: data.image || null,
+                const data = docSnap.data() || {} as any;
+
+                // Always preserve UID from Firebase auth / function arg
+                const safeUser: UserType = {
+                    uid, // ensure uid is never lost
+                    // Prefer Firestore values, then fall back to current auth user, then null
+                    email: (data.email ?? auth.currentUser?.email) ?? null,
+                    name:
+                        (data.name
+                            ?? auth.currentUser?.displayName
+                            ?? auth.currentUser?.email?.split('@')[0]) ?? null,
+                    image: data.image ?? null,
                 };
 
-                setUser({ ...userData }); // Update the user state with the fetched data  
+                // Merge with existing state to avoid dropping other fields unexpectedly
+                setUser((prev) => ({ ...(prev ?? {} as any), ...safeUser }));
+            } else {
+                // If there's no Firestore doc yet, at least ensure UID persists
+                const fallbackUser: UserType = {
+                    uid,
+                    email: auth.currentUser?.email ?? null,
+                    name: auth.currentUser?.displayName
+                        ?? auth.currentUser?.email?.split('@')[0]
+                        ?? null,
+                    image: null,
+                };
+                setUser((prev) => ({ ...(prev ?? {} as any), ...fallbackUser }));
             }
         } catch (error: any) {
-            let msg = error.message
-            // return {sucess: false, msg}; 
-            console.log('error: ', error)
+            console.log('error loading user data: ', error);
         }
 
     };

@@ -29,10 +29,10 @@ export default Button
 
 const styles = StyleSheet.create({
   button: {
-    height: verticalScale(55),
-    borderRadius: radius._30,
-    backgroundColor: colors.primary,
-    alignItems: 'center',
+    height: verticalScale(50),
+    borderRadius: radius._17,
+    backgroundColor: colors.primary, // Button color
+    alignItems: 'center', // text position 
     justifyContent: 'center',
     borderCurve: 'continuous',
    },

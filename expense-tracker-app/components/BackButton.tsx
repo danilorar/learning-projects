@@ -9,7 +9,7 @@ import { StyleSheet, TouchableOpacity } from 'react-native';
 
 const BackButton = ({
     style,
-    iconSize = 22,
+    iconSize = 20,
 }: BackButtonProps) => {
     const router = useRouter();
     
@@ -33,9 +33,9 @@ export default BackButton
 const styles = StyleSheet.create({
     button: {
         backgroundColor: colors.neutral600,
-        alignSelf: 'flex-start',
-        borderRadius:radius._12,
+        // alignSelf: 'flex-start',
+        borderRadius:radius._10,
         borderCurve: 'continuous',
-        padding: 5  ,
+        padding: 3  ,
     },                  
 })

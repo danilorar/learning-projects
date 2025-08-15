@@ -12,7 +12,7 @@ const Header = ({title= '', leftIcon, style}: HeaderProps) => {
      {
         title &&
         <Typo
-            size={18}
+            size={16} // header text size, default 16 looks good
             fontWeight={'500'}
             style={{
                 textAlign: 'center',

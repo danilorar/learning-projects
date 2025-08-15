@@ -129,7 +129,10 @@ export type UserType = {
   image?: any;
 } | null;
 
+// this was change to also include, phone + email 
 export type UserDataType = {
+  phone: string;
+  email: string | undefined;
   name: string;
   image?: any;
 };
